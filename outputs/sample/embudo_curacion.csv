@@ -1,0 +1,5 @@
+etapa,filas
+Datos crudos,300000
+Denominadores válidos y noches <= 30,299999
+"Precio total en (0, 50.000] USD",299958
+price_std >= 1 USD (piso de error),299282

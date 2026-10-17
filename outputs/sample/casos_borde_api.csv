@@ -1,0 +1,12 @@
+query_id,descripcion,expected_decision,api_decision,api_baseline_level,ok
+q06000,"Destino top, precio 80% bajo la mediana",deal,deal,L1_dest_mes_semana_estadia,True
+q06001,"Destino top, precio 3x la mediana",no_deal,no_deal,L1_dest_mes_semana_estadia,True
+q06002,Ciudad inexistente en país conocido -> fallback país,deal|no_deal,no_deal,L6_pais_mes_estadia,True
+q06003,Ciudad nula -> fallback país,deal|no_deal,no_deal,L6_pais_mes_estadia,True
+q06004,País inexistente -> sin soporte,insufficient_data,insufficient_data,L7_sin_soporte,True
+q06005,Ciudad sin mapeo con historia propia,deal|no_deal,no_deal,L2_dest_mes_estadia,True
+q06006,Precio absurdo (< 1 USD por persona-noche),invalid_price,invalid_price,L1_dest_mes_semana_estadia,True
+q06007,Noches = 0,invalid_input,invalid_input,L2_dest_mes_estadia,True
+q06008,Noches = 45 (fuera de rango),invalid_input,invalid_input,L2_dest_mes_estadia,True
+q06009,"Grupo grande: 6 adultos, 2 niños, 3 hab, 7 noches",deal|no_deal,no_deal,L2_dest_mes_estadia,True
+q06010,Nombre en minúsculas y sin acentos,deal|no_deal,no_deal,L1_dest_mes_semana_estadia,True

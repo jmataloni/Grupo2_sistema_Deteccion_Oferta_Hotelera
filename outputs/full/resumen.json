@@ -1,0 +1,26 @@
+{
+  "source": "full",
+  "n_train": 2512170,
+  "n_test": 2633804,
+  "n_test_evaluable": 2609281,
+  "test_evaluable_pct": 0.9906891325246677,
+  "train_prevalence": 0.15078715759514763,
+  "test_prevalence": 0.1504629052984328,
+  "winsor_cap": 1106.8308991304689,
+  "ml_thresholds": {
+    "F_ml_hist_gradient_boosting": 0.4099999999999999,
+    "G_ml_random_forest": 0.3499999999999999
+  },
+  "ml_val_f1": {
+    "F_ml_hist_gradient_boosting": 0.8084918532787543,
+    "G_ml_random_forest": 0.738830636347378
+  },
+  "test_set_rows": {
+    "real": 3600,
+    "sintetico": 2400,
+    "borde": 11
+  },
+  "edge_cases_ok": 11,
+  "edge_cases_total": 11,
+  "runtime_s": 1817.1
+}
